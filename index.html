@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" , initial-scale=1.0">
     <title>IIT KGP Eateries</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
     <style>
@@ -16,6 +16,10 @@
             width: 100%;
             height: 80px;
             background-color: #100F1F;
+            top: 0;
+            position: sticky;
+            z-index: 2;
+        
         }
 
         #DevSocIcon {
@@ -26,12 +30,13 @@
         }
 
         #navbar {
-            position: static;
+            z-index: 2;
             width: 100%;
             height: 50px;
             background-color: #FF4F4F;
             display: flex;
             align-items: center;
+            position:fixed;
 
         }
 
@@ -68,7 +73,7 @@
 
         #btop {
             border-right: 2px solid #CCCCCC;
-            ;
+            
         }
 
         #search {
@@ -94,6 +99,7 @@
             color: white;
             font-weight: 600;
             position: relative;
+            top:50px;
             margin-left: 15px;
         }
 
@@ -120,12 +126,12 @@
 
         }
 
-        #contents ul li a:hover {
+        #contents ul li:hover {
             text-decoration: underline;
 
         }
-        
-       
+
+
         #cont {
             color: white;
             font-family: 'Poppins', sans-serif;
@@ -164,19 +170,21 @@
         .Canteen-head {
             color: white;
             font-family: 'Poppins', sans-serif;
-            
+
             position: relative;
             top: -370px;
             left: 400px;
         }
-        .locn{
+
+        .locn {
             position: relative;
-            top:-375px;
-            left:400px;
+            top: -375px;
+            left: 400px;
             font-size: 30px;
             color: white;
         }
-        .loc-text{
+
+        .loc-text {
             position: relative;
             left: 432px;
             top: -436px;
@@ -185,74 +193,203 @@
             color: white;
             font-family: 'Poppins', sans-serif;
         }
-        .clock{
-            color:white;
+
+        .clock {
+            color: white;
             position: relative;
-            top:-450px;
+            top: -450px;
             left: 403px;
             font-size: 26px;
         }
-        .title{
+
+        .title {
             font-size: 26px;
-            color: #120b0b ;
+            color: #120b0b;
             font-family: 'Poppins', sans-serif;
         }
-        .clock-text{
+
+        .clock-text {
             font-size: 26px;
             color: white;
             font-family: 'Poppins', sans-serif;
             position: relative;
-            left:430px;
-            top:-508px;
+            left: 430px;
+            top: -508px;
         }
-        .phone{
+
+        .phone {
             font-size: 26px;
             color: white;
             position: relative;
             left: 402px;
-            top:-524px;
+            top: -524px;
         }
-        .phone-text{
+
+        .phone-text {
             font-size: 26px;
             color: white;
             font-family: 'Poppins', sans-serif;
             position: relative;
-            left:433px;
-            top:-583px;
+            left: 433px;
+            top: -583px;
         }
-        .about{
+
+        .about {
             color: white;
             font-size: 26px;
-            position:relative;
-            top:-597px;
-            left:402px;
+            position: relative;
+            top: -597px;
+            left: 402px;
         }
-        .about-text{
+
+        .about-text {
             color: white;
-            font-size: 16  px;
+            font-size: 16 px;
             font-family: 'Poppins', sans-serif;
             position: relative;
             top: -645px;
-            left:432px;
+            left: 432px;
+        }
 
+        .ViewMoreButton {
+            position: relative;
+            left: 700px;
+            top: -640px;
+            height: 40px;
+            width: 100px;
+            background-color: #FF4F4F;
+            font-family: 'Poppins', sans-serif;
+            border: 1px whitesmoke ridge;
+            font-weight: 400;
+        }
+
+        #Canteen2 {
+            position: relative;
+            top: 130px;
+            left: 32px;
+        }
+
+        #Canteen3 {
+            position: relative;
+            left: 32px;
+            top: 172px;
+        }
+
+        #Canteen4 {
+            position: relative;
+            left: 32px;
+            top: 216px;
+        }
+
+        #Canteen5 {
+            position: relative;
+            left: 32px;
+            top: 264px;
+        }
+
+        #Canteen6 {
+            position: relative;
+            left: 32px;
+            top: 312px;
+        }
+
+        #Canteen7 {
+            position: relative;
+            left: 32px;
+            top: 359px;
+        }
+
+        #Canteen8 {
+            position: relative;
+            left: 32px;
+            top: 408px;
+        }
+        #AboutUs{
+            width: 80%;
+            height:700px;
+            background-color: #200E3D;
+            position: relative;
+            top:500px;
+            border:8px #FF4F4F outset;
+            
+        }
+        #AboutHead{
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        #AboutUsimg{
+            position: relative;
+            top:-20px;
+            width: 470px;
+            height: 500px;
+            float: left;
+        }
+        #AboutText{
+            position: relative;
+            top:30px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            font-size: 24px; 
+        }
+        #ContactUs{
+            width: 100%;
+            height:70px;
+            background-color: black;
+            position: relative;
+            top:650px;
+        }
+        #email-icon{
+            font-size: 25px;
+            position: relative;
+            left:50px;
+            top:20px;
+        }
+        #emailid{
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            position: absolute;
+            left:80px;
+            top: 9px;
+        }
+        #fb-icon{
+            font-size: 28px;
+            position: relative;
+            top: 20px;
+            left:1200px;
+        }
+        #linkedin-icon{
+            font-size: 25px;
+            position: relative;
+            top:18px;
+            left: 1220px;
+        }
+        #github-icon{
+            font-size: 28px;
+            position: relative;
+            top:20px;
+            left:1240px;
         }
     </style>
 </head>
 
 <body>
+    <div name="top"></div>
     <div id="header" name="header">
         <img src="DevSoc_Icon_final.jpg" alt="DevSoc Icon" id="DevSocIcon">
     </div>
 
     <div id="navbar">
         <ul>
-            <a href="">
+            <a href="#AboutUs">
                 <li>About Us </li>
             </a>
-            <a href="">
+            <a href="#ContactUs">
                 <li>Contact Us</li>
             </a>
-            <a href="#header" id="btop">
+            <a href="#top" id="btop">
                 <li>Back to Top </li>
             </a>
         </ul>
@@ -261,10 +398,10 @@
             <input type="image" src="orb-search-dark.png" alt="Submit!" id="submit" />
         </form>
     </div>
-    <div id="mainbody">
+    <div id="mainbody" name="mainbody">
         <h1 id="heading-eateries" name="eateries">Eateries in IIT Kharagpur</h1>
         <div id="contents">
-            <center> 
+            <center>
                 <p id="cont">Contents of this page</p>
             </center>
             <ul>
@@ -286,19 +423,162 @@
             <h1 class="Canteen-head">Canteen 1</h1>
             <iconify-icon icon="mdi:location" class="locn"></iconify-icon>
             <p class="loc-text"><span class="title">Location:</span>Near XYZ Block</p>
-            <iconify-icon icon="mdi:clock-outline" class="clock"></iconify-icon> 
+            <iconify-icon icon="mdi:clock-outline" class="clock"></iconify-icon>
             <p class="clock-text"><span class="title">Timings:</span>Everyday 8P.M.-3A.M.</p>
             <iconify-icon icon="ic:sharp-phone" class="phone"></iconify-icon>
             <p class="phone-text"><span class="title">Contact No.:</span>+9198XXXXXX09</p>
             <iconify-icon icon="mdi:about" class="about"></iconify-icon>
-            <p class="about-text"><span class="title">About:</span>Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, 
+            <p class="about-text"><span class="title">About:</span>Lorem ipsum dolor sit amet, consectetur<br />
+                adipiscing elit,
                 sed do eiusmod tempor incididunt <br />ut labore et dolore magna aliqua.
-                 Ut enim ad <br />minim veniam, quis nostrud exercitation<br/> ullamco laboris 
-                 nisi ut aliquip ex ea commodo<br /> consequat.</p>
-
-
+                Ut enim ad <br />minim veniam, quis nostrud exercitation<br /> ullamco laboris
+                nisi ut aliquip ex ea commodo<br /> consequat.</p>
+            <input type="button" onclick="location.href='Canteen1.html';" value="View More" class="ViewMoreButton" />
         </div>
+        <div class="Canteen" id="Canteen2" name="Canteen2">
+            <img src="canteen.jpg" alt="Image of canteen" class="canteen-img">
+            <h1 class="Canteen-head">Canteen 2</h1>
+            <iconify-icon icon="mdi:location" class="locn"></iconify-icon>
+            <p class="loc-text"><span class="title">Location:</span>Near XYZ Block</p>
+            <iconify-icon icon="mdi:clock-outline" class="clock"></iconify-icon>
+            <p class="clock-text"><span class="title">Timings:</span>Everyday 8P.M.-3A.M.</p>
+            <iconify-icon icon="ic:sharp-phone" class="phone"></iconify-icon>
+            <p class="phone-text"><span class="title">Contact No.:</span>+9198XXXXXX09</p>
+            <iconify-icon icon="mdi:about" class="about"></iconify-icon>
+            <p class="about-text"><span class="title">About:</span>Lorem ipsum dolor sit amet, consectetur<br />
+                adipiscing elit,
+                sed do eiusmod tempor incididunt <br />ut labore et dolore magna aliqua.
+                Ut enim ad <br />minim veniam, quis nostrud exercitation<br /> ullamco laboris
+                nisi ut aliquip ex ea commodo<br /> consequat.</p>
+            <input type="button" onclick="location.href='Canteen2.html';" value="View More" class="ViewMoreButton" />
+        </div>
+        <div class="Canteen" id="Canteen3" name="Canteen3">
+            <img src="canteen.jpg" alt="Image of canteen" class="canteen-img">
+            <h1 class="Canteen-head">Canteen 3</h1>
+            <iconify-icon icon="mdi:location" class="locn"></iconify-icon>
+            <p class="loc-text"><span class="title">Location:</span>Near XYZ Block</p>
+            <iconify-icon icon="mdi:clock-outline" class="clock"></iconify-icon>
+            <p class="clock-text"><span class="title">Timings:</span>Everyday 8P.M.-3A.M.</p>
+            <iconify-icon icon="ic:sharp-phone" class="phone"></iconify-icon>
+            <p class="phone-text"><span class="title">Contact No.:</span>+9198XXXXXX09</p>
+            <iconify-icon icon="mdi:about" class="about"></iconify-icon>
+            <p class="about-text"><span class="title">About:</span>Lorem ipsum dolor sit amet, consectetur<br />
+                adipiscing elit,
+                sed do eiusmod tempor incididunt <br />ut labore et dolore magna aliqua.
+                Ut enim ad <br />minim veniam, quis nostrud exercitation<br /> ullamco laboris
+                nisi ut aliquip ex ea commodo<br /> consequat.</p>
+            <input type="button" onclick="location.href='Canteen3.html';" value="View More" class="ViewMoreButton" />
+        </div>
+        <div class="Canteen" id="Canteen4" name="Canteen4">
+            <img src="canteen.jpg" alt="Image of canteen" class="canteen-img">
+            <h1 class="Canteen-head">Canteen 4</h1>
+            <iconify-icon icon="mdi:location" class="locn"></iconify-icon>
+            <p class="loc-text"><span class="title">Location:</span>Near XYZ Block</p>
+            <iconify-icon icon="mdi:clock-outline" class="clock"></iconify-icon>
+            <p class="clock-text"><span class="title">Timings:</span>Everyday 8P.M.-3A.M.</p>
+            <iconify-icon icon="ic:sharp-phone" class="phone"></iconify-icon>
+            <p class="phone-text"><span class="title">Contact No.:</span>+9198XXXXXX09</p>
+            <iconify-icon icon="mdi:about" class="about"></iconify-icon>
+            <p class="about-text"><span class="title">About:</span>Lorem ipsum dolor sit amet, consectetur<br />
+                adipiscing elit,
+                sed do eiusmod tempor incididunt <br />ut labore et dolore magna aliqua.
+                Ut enim ad <br />minim veniam, quis nostrud exercitation<br /> ullamco laboris
+                nisi ut aliquip ex ea commodo<br /> consequat.</p>
+            <input type="button" onclick="location.href='Canteen4.html';" value="View More" class="ViewMoreButton" />
+        </div>
+        <div class="Canteen" id="Canteen5" name="Canteen5">
+            <img src="canteen.jpg" alt="Image of canteen" class="canteen-img">
+            <h1 class="Canteen-head">Canteen 5</h1>
+            <iconify-icon icon="mdi:location" class="locn"></iconify-icon>
+            <p class="loc-text"><span class="title">Location:</span>Near XYZ Block</p>
+            <iconify-icon icon="mdi:clock-outline" class="clock"></iconify-icon>
+            <p class="clock-text"><span class="title">Timings:</span>Everyday 8P.M.-3A.M.</p>
+            <iconify-icon icon="ic:sharp-phone" class="phone"></iconify-icon>
+            <p class="phone-text"><span class="title">Contact No.:</span>+9198XXXXXX09</p>
+            <iconify-icon icon="mdi:about" class="about"></iconify-icon>
+            <p class="about-text"><span class="title">About:</span>Lorem ipsum dolor sit amet, consectetur<br />
+                adipiscing elit,
+                sed do eiusmod tempor incididunt <br />ut labore et dolore magna aliqua.
+                Ut enim ad <br />minim veniam, quis nostrud exercitation<br /> ullamco laboris
+                nisi ut aliquip ex ea commodo<br /> consequat.</p>
+            <input type="button" onclick="location.href='Canteen5.html';" value="View More" class="ViewMoreButton" />
+        </div>
+        <div class="Canteen" id="Canteen6" name="Canteen6">
+            <img src="canteen.jpg" alt="Image of canteen" class="canteen-img">
+            <h1 class="Canteen-head">Canteen 6</h1>
+            <iconify-icon icon="mdi:location" class="locn"></iconify-icon>
+            <p class="loc-text"><span class="title">Location:</span>Near XYZ Block</p>
+            <iconify-icon icon="mdi:clock-outline" class="clock"></iconify-icon>
+            <p class="clock-text"><span class="title">Timings:</span>Everyday 8P.M.-3A.M.</p>
+            <iconify-icon icon="ic:sharp-phone" class="phone"></iconify-icon>
+            <p class="phone-text"><span class="title">Contact No.:</span>+9198XXXXXX09</p>
+            <iconify-icon icon="mdi:about" class="about"></iconify-icon>
+            <p class="about-text"><span class="title">About:</span>Lorem ipsum dolor sit amet, consectetur<br />
+                adipiscing elit,
+                sed do eiusmod tempor incididunt <br />ut labore et dolore magna aliqua.
+                Ut enim ad <br />minim veniam, quis nostrud exercitation<br /> ullamco laboris
+                nisi ut aliquip ex ea commodo<br /> consequat.</p>
+            <input type="button" onclick="location.href='Canteen6.html';" value="View More" class="ViewMoreButton" />
+        </div>
+        <div class="Canteen" id="Canteen7" name="Canteen7">
+            <img src="canteen.jpg" alt="Image of canteen" class="canteen-img">
+            <h1 class="Canteen-head">Canteen 7</h1>
+            <iconify-icon icon="mdi:location" class="locn"></iconify-icon>
+            <p class="loc-text"><span class="title">Location:</span>Near XYZ Block</p>
+            <iconify-icon icon="mdi:clock-outline" class="clock"></iconify-icon>
+            <p class="clock-text"><span class="title">Timings:</span>Everyday 8P.M.-3A.M.</p>
+            <iconify-icon icon="ic:sharp-phone" class="phone"></iconify-icon>
+            <p class="phone-text"><span class="title">Contact No.:</span>+9198XXXXXX09</p>
+            <iconify-icon icon="mdi:about" class="about"></iconify-icon>
+            <p class="about-text"><span class="title">About:</span>Lorem ipsum dolor sit amet, consectetur<br />
+                adipiscing elit,
+                sed do eiusmod tempor incididunt <br />ut labore et dolore magna aliqua.
+                Ut enim ad <br />minim veniam, quis nostrud exercitation<br /> ullamco laboris
+                nisi ut aliquip ex ea commodo<br /> consequat.</p>
+            <input type="button" onclick="location.href='Canteen7.html';" value="View More" class="ViewMoreButton" />
+        </div>
+        <div class="Canteen" id="Canteen8" name="Canteen8">
+            <img src="canteen.jpg" alt="Image of canteen" class="canteen-img">
+            <h1 class="Canteen-head">Canteen 8</h1>
+            <iconify-icon icon="mdi:location" class="locn"></iconify-icon>
+            <p class="loc-text"><span class="title">Location:</span>Near XYZ Block</p>
+            <iconify-icon icon="mdi:clock-outline" class="clock"></iconify-icon>
+            <p class="clock-text"><span class="title">Timings:</span>Everyday 8P.M.-3A.M.</p>
+            <iconify-icon icon="ic:sharp-phone" class="phone"></iconify-icon>
+            <p class="phone-text"><span class="title">Contact No.:</span>+9198XXXXXX09</p>
+            <iconify-icon icon="mdi:about" class="about"></iconify-icon>
+            <p class="about-text"><span class="title">About:</span>Lorem ipsum dolor sit amet, consectetur<br />
+                adipiscing elit,
+                sed do eiusmod tempor incididunt <br />ut labore et dolore magna aliqua.
+                Ut enim ad <br />minim veniam, quis nostrud exercitation<br /> ullamco laboris
+                nisi ut aliquip ex ea commodo<br /> consequat.</p>
+            <input type="button" onclick="location.href='Canteen8.html';" value="View More" class="ViewMoreButton" />
+        </div>
+
     </div>
+
+   <center> <div id="AboutUs" name="AboutUs">
+    <center><p id="AboutHead">ABOUT US</p></center>
+    <img src="AboutUs2.png" alt="DevSoc logo" id="AboutUsimg">
+    <p id="AboutText">The Developers' Society is a bunch of enthusiastic student developers eager to take on challenges,
+         seize opportunities and utilize their skills to develop 
+        applications that will digitize several processes within the institute.<br/><br/><br /><br />
+        In light of the need to improve existing applications and the potential for automating various workflows on campus,
+        the Developers' Society is an initative to bring together a group of individuals who are motivated and interested in encouraging
+        the development culture by taking various initiatitves within the institute and developing new applications
+        that benefit the entire KGP community.
+    </p>
+    </div></center>
+
+    <div id="ContactUs" name="ContactUs">
+        <iconify-icon icon="dashicons:email-alt" style="color: white;" id="email-icon"></iconify-icon>
+        <p id="emailid">example@example.com</p>
+       <a href="https://www.facebook.com/devsoc.iitkgp/"><iconify-icon icon="ic:baseline-facebook" style="color: white;" id="fb-icon"></iconify-icon></a>
+       <a href="https://in.linkedin.com/company/devsoc-iitkgp"><iconify-icon icon="bi:linkedin" style="color: white;" id="linkedin-icon"></iconify-icon></a>
+       <a href="https://github.com/devsoc-iitkgp"><iconify-icon icon="eva:github-fill" style="color: white;" id="github-icon"></iconify-icon></a>
+
+    </div>
+
 
 
 </body>

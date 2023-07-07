@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen 1</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <style>
+        #header {
+            width: 100%;
+            height: 80px;
+            background-color: #100F1F;
+            top: 0;
+            position: sticky;
+            z-index: 2;
+        }
+
+        #DevSocIcon {
+            height: 80px;
+            float: left;
+            position: relative;
+            left: 24px;
+        }
+        #navbar {
+            z-index: 2;
+            width: 100%;
+            height: 50px;
+            background-color: #FF4F4F;
+            display: flex;
+            align-items: center;
+            position:fixed;
+        }
+
+        #navbar ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+        #navbar ul li {
+            height: 25px;
+            display: flex;
+            align-items: center;
+            width: auto;
+            border-left: 2px solid #CCCCCC;
+
+            padding: 0 10px;
+        }
+
+        #navbar ul a {
+            text-decoration: none;
+        }
+
+        #navbar ul a li {
+            text-decoration: none;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+
+        #navbar ul li:hover {
+            border-bottom: 3px solid #CCCCCC;
+        }
+
+        #btop {
+            border-right: 2px solid #CCCCCC;
+            
+        }
+
+        #search {
+            position: relative;
+            left: 660px;
+            font-family: 'Poppins', sans-serif;
+            background-color: #E4E4E4;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        #submit{
+            position: relative;
+            left: 660px;
+        }
+        
+        body{
+            background-color: #585c8e;
+        }
+
+        #Heading{
+            font-family:'Poppins', sans-serif;
+            color: white;
+            position: absolute;
+            top:120px;
+            left:500px;
+        }
+
+        #image1{
+            width: 500px;
+            height:400px;
+            position: absolute;
+            left: 40px;
+            top: 150px;
+            border-radius: 10px;
+        }
+        #name-icon{
+            font-size: 50px;
+            position: absolute;
+            top:170px;
+            left: 550px;
+        }
+        .title{
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            color: black;
+                
+        }
+        .name-text{
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            color: white; 
+            position: absolute;
+            left:610px;
+            top: 130px;
+        }
+        #location-icon{
+            font-size: 50px;
+            position: relative;
+            top:160px;
+            left: 550px;
+        }
+        .locn-text{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            position: absolute;
+            left:610px;
+            top: 203px;
+        }
+        #clock-icon{
+            font-size: 50px;
+            position: relative;
+            top:230px;
+            left: 500px;
+        }
+        .clock-text{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            position: absolute;
+            left:610px;
+            top: 270px;
+        }
+
+        #phone-icon{
+             color: white;
+            font-size: 50px;
+            position: relative;
+            top:300px;
+            left: 450px;
+        }
+
+        .contact-text{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            position: absolute;
+            left:610px;
+            top: 340px;
+        }
+        #hall-icon{
+            font-size: 50px;
+            position: relative;
+            top:364px;
+            left: 395px;
+        }
+        .hall-text{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            position: absolute;
+            left:615px;
+            top: 408px;
+        }
+
+        #About{
+            width:100%;
+            height:50px;
+            background-color: #FF4F4F;
+            position: absolute;
+            top:600px;
+        }
+        
+        #About-heading{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            position: absolute;
+            top: -5px;
+            font-weight: 500;
+            left: 60px;
+            font-size: larger;
+
+        }
+        #about-icon{
+            color: white;
+            position: relative;
+            left:36px;
+            font-size: 19px;
+            top: 15px;
+        }
+        #image2{
+            width: 400px;
+            height: 300px;
+            position: relative;
+            top:540px;
+            right: 40px;
+            float: right;
+            border-radius: 10px;
+        }
+        #about-text{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            position: relative;
+            top:570px;
+            margin-left: 35px;
+            font-weight:400;
+        }
+        #Menu-bar{
+            width:100%;
+            height:50px;
+            background-color: #FF4F4F;
+            position: absolute;
+            top:1080px;
+        }
+        #menu-icon{
+            color: white;
+            font-size: 22px;
+            position: relative;
+            left: 35px;
+            top:14px;
+        }
+        #Menu-head{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            position: absolute;
+            top: -5px;
+            font-weight: 500;
+            left: 60px;
+            font-size: larger;
+        }
+        #MenuTable1{
+            position: relative;
+            top:780px;
+            left: 40px;
+            color: white;
+            font-size:20px;
+            background-color: #100F1F;
+            
+        }
+
+        td,th{
+            width: 160px;
+            text-align: center;
+        }
+
+        #MenuTable2{
+            position: relative;
+            top:538px;
+            left: 420px;
+            color: white;
+            font-size:20px;
+            background-color: #100F1F;
+        }
+
+        #MenuTable3{
+            position: relative;
+            top:297px;
+            left: 790px;
+            color: white;
+            font-size:20px;
+            background-color: #100F1F;
+        }
+        #ContactUs{
+            width: 100%;
+            height:70px;
+            background-color: black;
+            position: relative;
+            top: 450px;
+        }
+        #email-icon{
+            font-size: 25px;
+            position: relative;
+            left:50px;
+            top:20px;
+        }
+        #emailid{
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            position: absolute;
+            left:80px;
+            top: 9px;
+        }
+        #fb-icon{
+            font-size: 28px;
+            position: relative;
+            top: 20px;
+            left:1200px;
+        }
+        #linkedin-icon{
+            font-size: 25px;
+            position: relative;
+            top:18px;
+            left: 1220px;
+        }
+        #github-icon{
+            font-size: 28px;
+            position: relative;
+            top:20px;
+            left:1240px;
+        }
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div name="top"></div>
+    <div id="header" name="header">
+        <img src="DevSoc_Icon_final.jpg" alt="DevSoc Icon" id="DevSocIcon">
+    </div>
+    <div id="navbar">
+        <ul>
+            <a href="#About">
+                <li>About</li>
+            </a>
+           
+            <a href="#Menu">
+                <li>Menu</li>
+            </a>
+            <a href="#ContactUs">
+                <li>Contact Us</li>
+            </a>
+            <a href="#top" id="btop">
+                <li>Back to Top </li>
+            </a>
+        </ul>
+        <form class="search">
+            <input type="text" id="search" placeholder="Search" height="35px">
+            <input type="image" src="orb-search-dark.png" alt="Submit!" id="submit" />
+        </form>
+    </div>
+    
+    <div id="intro">
+        <img src="canteen.jpg" alt="Image of Canteen 1" id="image1"/>
+        <iconify-icon icon="ic:baseline-restaurant" style="color: white;" id="name-icon"></iconify-icon>
+        <p class="name-text"><span class="title">Name: </span>Canteen 7</p>
+        <iconify-icon icon="mdi:location" style="color: white;" id="location-icon"></iconify-icon>
+        <p class="locn-text"><span class="title">Location: </span>Near XYZ Block</p>
+        <iconify-icon icon="mdi:clock-outline" style="color: white;" id="clock-icon"></iconify-icon>
+        <p class="clock-text"><span class="title">Timings: </span>Everyday 8P.M. - 3A.M.</p>
+        <iconify-icon icon="ic:sharp-phone" class="phone" id="phone-icon"></iconify-icon>
+        <p class="contact-text"><span class="title">Contact No.: </span>+9198XXXXXX09</p>
+        <iconify-icon icon="ic:baseline-home" style="color: white;" id="hall-icon"></iconify-icon>
+        <p class="hall-text"><span class="title">Nearby Halls of Residence: </span>XYZ,ABC,PQRS</p>
+    </div>
+
+    <div id="About" name="About">
+        <h3 id="About-heading">About</h2>
+            <iconify-icon icon="mdi:about" class="about" id="about-icon"></iconify-icon>
+    </div>
+
+    <div id="about-body">
+        <img src="Canteen2.jpg" alt="image of canteen" id="image2" />
+        <p id="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor Etiam dolore magna aliqua
+            . Id cursus metus aliquam eleifend. Purus sit amet volutpat c
+            onsequat mauris  Mauris pellentesque pulvinar pellentesque habitan
+            t morbi. Volutpat commodo sed egesta egestas fringilla phasellus faucibus scelerisque eleifend. Nibh venenatis cras sed felis eget. Conseq mauris nunc congue nisi vitae. Lobortis elementum nibh tellus molestie nunc. Etiam non quam lac suspend faucibus interdum posuere lorem ipsum. Lacus vestibulum sed arcu non odio euismod
+             at. Orci nulla pellentesque dignissim enim sit amet venenatis. Duis tristi
+             que sollicitudin nibh sit amet commod nulla facilisi nullam.
+           Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Ut tell element sagittis vitae et leo duis ut.</p>
+    </div>
+    <div id="Menu-bar" name="Menu">
+        <h3 id="Menu-head">Menu</h2>
+            <iconify-icon icon="fluent-emoji-high-contrast:fork-and-knife-with-plate" style="color: white;" class="about" id="menu-icon"></iconify-icon>
+    </div>
+    <div id="MENU">
+      <table id="MenuTable1">
+            <tr><th>Starter Name</th><th>Price</th></tr>
+            <tr><td>Item 1</td><td>₹XXXX</td></tr>
+            <tr><td>Item 2</td><td>₹XXXX</td></tr>
+            <tr><td>Item 3</td><td>₹XXXX</td></tr>
+            <tr><td>Item 4</td><td>₹XXXX</td></tr>
+            <tr><td>Item 5</td><td>₹XXXX</td></tr>
+            <tr><td>Item 6</td><td>₹XXXX</td></tr>
+            <tr><td>Item 7</td><td>₹XXXX</td></tr>
+            <tr><td>Item 8</td><td>₹XXXX</td></tr>
+        </table>
+
+        <table id="MenuTable2">
+            <tr><th>Main Course </th><th>Price</th></tr>
+            <tr><td>Item 1</td><td>₹XXXX</td></tr>
+            <tr><td>Item 2</td><td>₹XXXX</td></tr>
+            <tr><td>Item 3</td><td>₹XXXX</td></tr>
+            <tr><td>Item 4</td><td>₹XXXX</td></tr>
+            <tr><td>Item 5</td><td>₹XXXX</td></tr>
+            <tr><td>Item 6</td><td>₹XXXX</td></tr>
+            <tr><td>Item 7</td><td>₹XXXX</td></tr>
+            <tr><td>Item 8</td><td>₹XXXX</td></tr>
+        </table>
+
+        <table id="MenuTable3">
+            <tr><th>Dessert</th><th>Price</th></tr>
+            <tr><td>Item 1</td><td>₹XXXX</td></tr>
+            <tr><td>Item 2</td><td>₹XXXX</td></tr>
+            <tr><td>Item 3</td><td>₹XXXX</td></tr>
+            <tr><td>Item 4</td><td>₹XXXX</td></tr>
+            <tr><td>Item 5</td><td>₹XXXX</td></tr>
+            <tr><td>Item 6</td><td>₹XXXX</td></tr>
+            <tr><td>Item 7</td><td>₹XXXX</td></tr>
+            <tr><td>Item 8</td><td>₹XXXX</td></tr>
+        </table>
+    </div>
+    <div id="ContactUs" name="ContactUs">
+        <iconify-icon icon="dashicons:email-alt" style="color: white;" id="email-icon"></iconify-icon>
+        <p id="emailid">example@example.com</p>
+       <a href="https://www.facebook.com/devsoc.iitkgp/"><iconify-icon icon="ic:baseline-facebook" style="color: white;" id="fb-icon"></iconify-icon></a>
+       <a href="https://in.linkedin.com/company/devsoc-iitkgp"><iconify-icon icon="bi:linkedin" style="color: white;" id="linkedin-icon"></iconify-icon></a>
+       <a href="https://github.com/devsoc-iitkgp"><iconify-icon icon="eva:github-fill" style="color: white;" id="github-icon"></iconify-icon></a>
+
+    </div>
+</body>
+</html>
